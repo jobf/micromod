@@ -666,3 +666,20 @@ void micromod_get_audio( short *output_buffer, long count ) {
 		count -= remain;
 	}
 }
+
+
+/*
+	Seek to approximately the specified sample position.
+	The actual sample position reached is returned.
+*/
+long micromod_seek(long sample_pos){
+	long chan_idx;
+	chan_idx = 0;
+	micromod_set_position( 0 );
+	long current_pos = 0;
+	while( ( sample_pos - current_pos ) >= tick_len ){
+		sequence_tick();
+		current_pos += tick_len;
+	}
+	return current_pos;
+}

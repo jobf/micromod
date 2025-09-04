@@ -54,3 +54,9 @@ void micromod_set_gain( long value );
 	Output buffer must be zeroed.
 */
 void micromod_get_audio( short *output_buffer, long count );
+
+/*
+	Seek to approximately the specified sample position.
+	The actual sample position reached is returned.
+ */
+long micromod_seek(long sample_pos);
