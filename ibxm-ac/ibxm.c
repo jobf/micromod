@@ -1,7 +1,7 @@
 
 #include "stdlib.h"
 #include "string.h"
-
+#include <stdio.h>
 #include "ibxm.h"
 
 const char *IBXM_VERSION = "ibxm/ac mod/xm/s3m replay 20191214 (c)mumart@gmail.com";

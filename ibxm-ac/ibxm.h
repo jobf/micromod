@@ -1,3 +1,4 @@
+#pragma once
 
 /* ibxm/ac mod/xm/s3m replay (c)mumart@gmail.com */
 
